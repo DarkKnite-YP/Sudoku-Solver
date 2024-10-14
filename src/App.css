@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.row {
+  display: contents; /* Makes rows act as flex items */
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #0077cc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cell:disabled {
+  background-color: #d1e7ff;
+}
+
+.solve-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.solve-button:hover {
+  background-color: #005fa3;
+}
+
+p {
+  font-size: 18px;
+  color: #0077cc;
+}
